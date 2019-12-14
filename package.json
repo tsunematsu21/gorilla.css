@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/tsunematsu21/gorilla.css/issues",
     "email": "tsunematsu21@users.noreply.github.com"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0"
   }
 }
