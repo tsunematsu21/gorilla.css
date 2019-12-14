@@ -1,0 +1,20 @@
+{
+  "name": "gorilla.css",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "tsunematsu21",
+    "email": "tsunematsu21@users.noreply.github.com",
+    "url": "https://github.com/tsunematsu21"
+  },
+  "homepage": "https://github.com/tsunematsu21/gorilla.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsunematsu21/gorilla.css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tsunematsu21/gorilla.css/issues",
+    "email": "tsunematsu21@users.noreply.github.com"
+  }
+}
