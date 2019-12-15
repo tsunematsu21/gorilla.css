@@ -21,7 +21,6 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "autoprefixer": "^9.7.3",
-    "banner-cli": "^0.14.1",
     "clean-css-cli": "^4.3.0",
     "husky": "^3.1.0",
     "node-sass": "^4.13.0",
@@ -30,12 +29,11 @@
     "rimraf": "^3.0.0"
   },
   "scripts": {
-    "build": "run-s build:clean build:sass build:autoprefix build:banner build:cleancss",
-    "build:clean": "rimraf dist",
-    "build:sass": "node-sass --output-style expanded src/gorilla.scss dist/gorilla.css",
-    "build:autoprefix": "postcss --use autoprefixer --map false --output dist/gorilla.css dist/gorilla.css",
-    "build:banner": "banner-cli dist/*.css",
-    "build:cleancss": "cleancss -o dist/gorilla.min.css dist/gorilla.css"
+    "build": "run-s clean sass autoprefix minify",
+    "clean": "rimraf dist",
+    "sass": "node-sass --output-style expanded src/gorilla.scss dist/gorilla.css",
+    "autoprefix": "postcss --use autoprefixer --map false --output dist/gorilla.css dist/gorilla.css",
+    "minify": "cleancss -o dist/gorilla.min.css dist/gorilla.css"
   },
   "commitlint": {
     "extends": [
