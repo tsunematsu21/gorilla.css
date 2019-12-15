@@ -21,16 +21,18 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "banner-cli": "^0.14.1",
+    "clean-css-cli": "^4.3.0",
     "husky": "^3.1.0",
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.0"
   },
   "scripts": {
-    "build": "run-s build:clean build:sass build:banner",
+    "build": "run-s build:clean build:sass build:banner build:cleancss",
     "build:clean": "rimraf dist",
     "build:sass": "node-sass --output-style expanded src/gorilla.scss dist/gorilla.css",
-    "build:banner": "banner-cli dist/*.css"
+    "build:banner": "banner-cli dist/*.css",
+    "build:cleancss": "cleancss -o dist/gorilla.min.css dist/gorilla.css"
   },
   "commitlint": {
     "extends": [
