@@ -1,0 +1,50 @@
+@function pow($base, $exponent) {
+  $result: 1;
+
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+
+  @return $result;
+}
+
+@function luminance($color) {
+  $colors: (
+    'red': red($color),
+    'green': green($color),
+    'blue': blue($color)
+  );
+
+  @each $key, $value in $colors {
+    $value: $value / 255;
+
+    @if ($value <= 0.03928) {
+      $value: $value / 12.92;
+    }
+
+    @else {
+      $value: pow(($value + 0.055) / 1.055, 2.4);
+    }
+    $colors: map-merge($colors, ($key: $value));
+  }
+
+  $red: map-get($colors, 'red');
+  $green: map-get($colors, 'green');
+  $blue: map-get($colors, 'blue');
+
+  @return 0.2126 * $red + 0.7152 * $green + 0.0722 * $blue;
+}
+
+@function text-color($color) {
+  $luminance: luminance($color);
+  $light-contrast: (luminance(white) + 0.05) / ($luminance + 0.05);
+  $dark-contrast: ($luminance + 0.05) / (luminance(black) + 0.05);
+
+  @if ($light-contrast < $dark-contrast) {
+    @return $text-color-black;
+  }
+
+  @else {
+    @return $text-color-white;
+  }
+}
