@@ -6,3 +6,12 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
+body {
+  font-family: $font-family;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+  background-color: $color-background;
+  color: text-color($color-background);
+}
