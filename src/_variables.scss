@@ -7,3 +7,15 @@ $color-primary: #f05e1c !default;
 $color-secondary: #313131 !default;
 $color-background: #f4f5f6 !default;
 $color-surface: #fff !default;
+
+$custom-colors: () !default;
+
+$colors: map-merge(
+  (
+    "primary": $color-primary,
+    "secondary": $color-secondary,
+    "background": $color-background,
+    "surface": $color-surface
+  ),
+  $custom-colors
+);
