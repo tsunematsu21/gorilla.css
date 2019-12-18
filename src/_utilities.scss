@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+// Float
+.is-clearfix {
+  *zoom: 1;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.is-pulled-left {
+  float: left;
+}
+
+.is-pulled-right {
+  float: right;
+}
