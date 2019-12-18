@@ -48,3 +48,7 @@
     @return $text-color-white;
   }
 }
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
