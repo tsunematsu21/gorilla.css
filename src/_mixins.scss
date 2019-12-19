@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@mixin background-color-modifiers() {
+  @each $key, $value in $colors {
+    &.is-#{$key} {
+      background-color: $value;
+      color: text-color($value);
+    }
+  }
+}
