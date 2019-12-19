@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  appearance: none;
+  background-color: $color-surface;
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: $box-shadow-3;
+  color: text-color($color-surface);
+  cursor: pointer;
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  outline: none;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: $box-shadow-transition;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      box-shadow: $box-shadow-2;
+    }
+
+    &:active {
+      box-shadow: $box-shadow-1;
+    }
+  }
+}
