@@ -36,4 +36,6 @@ input[type='submit'] {
       box-shadow: $box-shadow-1;
     }
   }
+
+  @include background-color-modifiers();
 }
