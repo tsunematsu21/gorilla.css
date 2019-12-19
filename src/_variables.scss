@@ -12,6 +12,8 @@ $custom-colors: () !default;
 
 $colors: map-merge(
   (
+    "black": $text-color-black,
+    "white": $text-color-white,
     "primary": $color-primary,
     "secondary": $color-secondary,
     "background": $color-background,
