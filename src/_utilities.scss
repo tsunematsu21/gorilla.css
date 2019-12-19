@@ -18,3 +18,10 @@
 .is-pulled-right {
   float: right;
 }
+
+// Text color
+@each $key, $value in $colors {
+  &.has-text-#{$key} {
+    color: $value !important;
+  }
+}
