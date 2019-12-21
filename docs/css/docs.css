@@ -257,13 +257,13 @@ body {
 .container {
   margin: 0 auto;
   max-width: 126rem;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   position: relative;
   width: 100%;
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .section > h1,
@@ -272,7 +272,7 @@ body {
 .section > h4,
 .section > h5,
 .section > h6 {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 b,
@@ -347,6 +347,7 @@ input[type='submit'] {
   line-height: 4rem;
   outline: none;
   padding: 0 3rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-align: center;
   text-decoration: none;
   -webkit-transition: box-shadow 0.2s ease-in-out;
@@ -436,6 +437,35 @@ input[type='submit'].is-surface {
   color: rgba(0, 0, 0, 0.7);
 }
 
+pre > code {
+  border: lightgray 1px solid;
+  border-radius: 0.2rem;
+  display: block;
+  font-family: Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
+  font-size: 80%;
+  margin: 1rem 0;
+  overflow-y: hidden;
+  padding: 2rem;
+  position: relative;
+  white-space: pre;
+}
+
+pre > code[data-title] {
+  padding-top: 3rem;
+}
+
+pre > code::after {
+  background-color: #313131;
+  color: #f4f5f6;
+  content: attr(data-title);
+  display: inline-block;
+  left: 0;
+  line-height: 2rem;
+  padding: 0 1rem;
+  position: absolute;
+  top: 0;
+}
+
 .is-clearfix {
   *zoom: 1;
 }
@@ -476,6 +506,30 @@ input[type='submit'].is-surface {
 
 .has-text-surface {
   color: #fff !important;
+}
+
+.has-background-black {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.has-background-white {
+  background-color: #f4f5f6 !important;
+}
+
+.has-background-primary {
+  background-color: #f05e1c !important;
+}
+
+.has-background-secondary {
+  background-color: #313131 !important;
+}
+
+.has-background-background {
+  background-color: #f4f5f6 !important;
+}
+
+.has-background-surface {
+  background-color: #fff !important;
 }
 
 /*# sourceMappingURL=docs.css.map */
