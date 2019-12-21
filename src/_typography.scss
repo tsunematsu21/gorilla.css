@@ -55,3 +55,27 @@ h5 {
 h6 {
   font-size: 1.6rem;
 }
+
+// Lists
+ol {
+  list-style: decimal inside;
+}
+
+ul {
+  list-style: circle inside;
+}
+
+dl,
+ol,
+ul {
+  list-style: none;
+  margin: 0 1rem;
+  padding: 0;
+
+  dl,
+  ol,
+  ul {
+    font-size: 90%;
+    padding-left: 2rem;
+  }
+}
