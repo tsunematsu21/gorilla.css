@@ -32,3 +32,17 @@
     background-color: $value !important;
   }
 }
+
+// Text alignments
+$alignments: (
+  'centered': 'center',
+  'justified': 'justify',
+  'left': 'left',
+  'right': 'right'
+);
+
+@each $alignment, $text-align in $alignments {
+  .has-text-#{$alignment} {
+    text-align: #{$text-align} !important;
+  }
+}
