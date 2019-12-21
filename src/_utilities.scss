@@ -25,3 +25,10 @@
     color: $value !important;
   }
 }
+
+// Background color
+@each $key, $value in $colors {
+  &.has-background-#{$key} {
+    background-color: $value !important;
+  }
+}
