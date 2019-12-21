@@ -3,13 +3,13 @@
 .container {
   margin: 0 auto;
   max-width: 126rem;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   position: relative;
   width: 100%;
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 
   > h1,
   > h2,
@@ -17,6 +17,6 @@
   > h4,
   > h5,
   > h6 {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 }
