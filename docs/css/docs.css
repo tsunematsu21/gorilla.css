@@ -343,6 +343,8 @@ input[type='submit'] {
   color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
   display: inline-block;
+  font-family: "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
   height: 4rem;
   line-height: 4rem;
   outline: none;
@@ -406,7 +408,7 @@ button.is-primary,
 input[type='button'].is-primary,
 input[type='reset'].is-primary,
 input[type='submit'].is-primary {
-  background-color: #f05e1c;
+  background-color: #ffe135;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -493,7 +495,7 @@ pre > code::after {
 }
 
 .has-text-primary {
-  color: #f05e1c !important;
+  color: #ffe135 !important;
 }
 
 .has-text-secondary {
@@ -517,7 +519,7 @@ pre > code::after {
 }
 
 .has-background-primary {
-  background-color: #f05e1c !important;
+  background-color: #ffe135 !important;
 }
 
 .has-background-secondary {
@@ -530,6 +532,22 @@ pre > code::after {
 
 .has-background-surface {
   background-color: #fff !important;
+}
+
+.has-text-centered {
+  text-align: center !important;
+}
+
+.has-text-justified {
+  text-align: justify !important;
+}
+
+.has-text-left {
+  text-align: left !important;
+}
+
+.has-text-right {
+  text-align: right !important;
 }
 
 /*# sourceMappingURL=docs.css.map */
