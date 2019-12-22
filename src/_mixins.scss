@@ -8,3 +8,10 @@
     }
   }
 }
+
+@mixin mq($from: false) {
+  @if ($from) {
+    @media (min-width: map-get($breakpoints, $from)) {
+      @content; }
+  }
+}
