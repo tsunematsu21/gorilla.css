@@ -71,3 +71,10 @@ ul {
     padding-left: 2rem;
   }
 }
+
+// Blockquote
+blockquote {
+  border-left: 0.4rem solid $color-primary;
+  opacity: 0.8;
+  padding: 1rem 2rem;
+}
