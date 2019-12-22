@@ -275,6 +275,31 @@ body {
   margin: 1rem 0;
 }
 
+.row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 100%;
+}
+
+.row .column {
+  display: block;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (min-width: 48rem) {
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
+}
+
 b,
 strong {
   font-weight: bold;
