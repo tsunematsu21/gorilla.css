@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.is-quarter-height { min-height: 25vh; }
+  &.is-half-height { min-height: 50vh; }
+  &.is-full-height { min-height: 100vh; }
+
+  @each $key, $value in $colors {
+    &.is-#{$key} {
+      background-color: $value;
+      color: text-color($value);
+    }
+  }
+
+  > .header,
+  > .footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  > .body {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 2rem;
+  }
+}
