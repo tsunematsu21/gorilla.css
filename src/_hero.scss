@@ -15,13 +15,13 @@
     }
   }
 
-  > .header,
-  > .footer {
+  > .hero-header,
+  > .hero-footer {
     flex-grow: 0;
     flex-shrink: 0;
   }
 
-  > .body {
+  > .hero-body {
     align-items: center;
     display: flex;
     flex-grow: 1;
