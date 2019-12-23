@@ -14,7 +14,7 @@
 <body>
   <header>
     <div class="hero is-half-height is-secondary">
-      <div class="body">
+      <div class="hero-body">
         <section class="section container has-text-centered">
           <h1>gorilla.css</h1>
           <p>
@@ -163,6 +163,66 @@
 &lt;/div&gt;</code></pre>
         </p>
       </section>
+      <section class="section">
+        <h3>Hero</h3>
+        <p>
+          The hero component to showcase something, like the top of this documentation, impresses any gorilla.<br>
+          <pre><code class="prettyprint lang-html" data-title="Snippet">&lt;div class="hero"&gt;
+  &lt;div class="hero-body"&gt;
+    &lt;h1&gt;Awesome title&lt;/h1&gt;
+    &lt;p&gt;Amazing subtitle&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </p>
+        <section class="section">
+          <h4>Size options</h4>
+          <p>
+            Sizing changes the impression. There are three size options.<br>
+            <ul>
+              <li>.is-quarter-height</li>
+              <li>.is-half-height</li>
+              <li>.is-full-height</li>
+            </ul>
+            <pre><code class="prettyprint lang-html" data-title="Snippet">&lt;div class="hero is-quarter-height"&gt;
+  &lt;div class="hero-body"&gt;
+    &lt;h1&gt;Awesome title&lt;/h1&gt;
+    &lt;p&gt;Amazing subtitle&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </p>
+        </section>
+        <section class="section">
+          <h4>Color options</h4>
+          <p>
+            Coloring will improve visibility.<br>
+            Inside the hero component, text color is calculated according to background color.<br>
+            <pre><code class="prettyprint lang-html" data-title="Snippet">&lt;div class="hero is-half-height is-primary"&gt;
+  &lt;div class="hero-body"&gt;
+    &lt;h1&gt;Awesome title&lt;/h1&gt;
+    &lt;p&gt;Amazing subtitle&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </p>
+        </section>
+        <section class="section">
+          <h4>Header and Footer</h4>
+          <p>
+            Can have fixed header and footer into hero component using a dedicated container class.<br>
+            <pre><code class="prettyprint lang-html" data-title="Snippet">&lt;div class="hero is-full-height is-primary"&gt;
+  &lt;div class="hero-header"&gt;
+    &lt;!-- Godlike header --&gt;
+  &lt;/div&gt;
+  &lt;div class="hero-body"&gt;
+    &lt;h1&gt;Awesome title&lt;/h1&gt;
+    &lt;p&gt;Amazing subtitle&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="hero-footer"&gt;
+    &lt;!-- Legendary header --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </p>
+        </section>
+      </section>
     </section>
     <hr>
     <section class="section">
@@ -182,7 +242,7 @@
         <pre><code class="prettyprint lang-html" data-title="Snippet">&lt;button class="button" disabled&gt;.button&lt;/button&gt;</code></pre>
       </p>
       <section class="section">
-        <h3>Color variant</h3>
+        <h3>Color options</h3>
         <p>
           Coloring will improve visibility.<br>
           Inside the button, text color is calculated according to background color.<br>

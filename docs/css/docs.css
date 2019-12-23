@@ -354,14 +354,14 @@ body {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.hero > .header,
-.hero > .footer {
+.hero > .hero-header,
+.hero > .hero-footer {
   -webkit-box-flex: 0;
           flex-grow: 0;
   flex-shrink: 0;
 }
 
-.hero > .body {
+.hero > .hero-body {
   -webkit-box-align: center;
           align-items: center;
   display: -webkit-box;
