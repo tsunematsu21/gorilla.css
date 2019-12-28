@@ -1,13 +1,5 @@
 /*! gorilla.css v0.0.0 | MIT License | github.com/tsunematsu21/gorilla.css */
 
-@import "variables";
-@import "functions";
-@import "mixins";
-@import "base";
-@import "layouts";
-@import "grid";
-@import "hero";
-@import "typography";
-@import "button";
-@import "code";
-@import "utilities";
+@import "base/index";
+@import "layouts/index";
+@import "elements/index";
