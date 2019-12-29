@@ -1,0 +1,13 @@
+.badge {
+  background-color: $color-surface;
+  border-radius: 0.2rem;
+  color: text-color($color-surface);
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1;
+  padding: 0.1em 0.3em;
+  text-align: center;
+  vertical-align: baseline;
+
+  @include background-color-modifiers();
+}
