@@ -1,0 +1,10 @@
+.box {
+  background-color: $color-surface;
+  border-radius: 0.2rem;
+  box-shadow: $box-shadow-1;
+  color: text-color($color-surface);
+  display: block;
+  padding: 1rem 2rem;
+
+  @include background-color-modifiers();
+}
